@@ -6,16 +6,24 @@ body {
   /* background-color: pink; */
     font-family: 'Lobster Two', cursive;
     padding: 20px;
+    height: 100vh;
 }
 
 #header {
-  text-align: left;
-  font-size: 25px;
+  /* text-align: left; */
+  font-size: 35px;
+  display: inline-block;
+}
+
+.sub-header {
+
 }
 
 nav {
   text-align: center;
   font-family: 'Lobster Two', cursive;
+  position: relative;
+  top: 25%;
 }
 
 .navigation ul {
@@ -56,33 +64,70 @@ nav {
   background-image: url(../images/line-drawings/line-drawings-1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+ }
+
+.view-sketches {
+  background-image: url(../images/view-sketches/Sydney-Opera-House.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-h2 {
-  display: inline;
-  padding: 3%;
+.cad {
+  background-image: url(../images/cad/cad.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.d-models {
+background-image: url(../images/IMG_20170221_103306(1).jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+a {
+  width: 100%;
 }
 
 img {
-  width: 100%;
+  width: 75%;
   display: block;
   height: auto;
 }
 
-.img-container {
-  width: 25%;
-  display: block;
-}
-
-
-/* Index */
-
 .line-drawings-container {
-  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+.line-drawings-container h1 {
+  flex-basis: 100%;
+}
 
-#sidebar {
+.line-drawings-container a, .two-images {
+  max-width: 450px;
+}
+
+.view-sketches-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.view-sketches-container .img-container {
+  max-width: 450px;
+}
+.cad-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cad-container .img-container {
+max-width: 450px;
+}
+
+.sidebar {
   position:absolute;
   top:0px;
   right:0px;
@@ -95,10 +140,10 @@ img {
   transition:all 400ms ease;
 }
 
-#sidebar ul {
+.sidebar ul {
   list-style: none;
 }
-#sidebar ul li {
+.sidebar ul li {
   color:#ccc;
   font-size:20px;
   width:100%;
@@ -106,21 +151,21 @@ img {
   border-bottom:1px solid #222222;
   line-height:50px;
 }
-#sidebar.active {
+.sidebar.active {
   transform:perspective(1200px) rotateY(0deg);
 }
 
-#toggle-btn {
+.toggle-btn {
   position:absolute;
   right:30px;
   top:20px;
   transition:left 200ms linear 0ms,transform 300ms ease 100ms;
 }
-#toggle-btn.active {
+.toggle-btn.active {
   right:230px;
   transform:rotate(360deg);
 }
-#toggle-btn span {
+.toggle-btn span {
   position:relative;
   top:0px;
   display:block;
@@ -131,14 +176,14 @@ img {
   cursor:pointer;
   transition:transform 300ms ease 200ms;
 }
-#toggle-btn.active span:nth-child(1) {
+.toggle-btn.active span:nth-child(1) {
   top:10px;
   transform:rotate(45deg);
 }
-#toggle-btn.active span:nth-child(2) {
+.toggle-btn.active span:nth-child(2) {
   opacity:0;
 }
-#toggle-btn.active span:nth-child(3) {
+.toggle-btn.active span:nth-child(3) {
   top:-10px;
   transform:rotate(-45deg);
 }

@@ -4,12 +4,15 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./styles/fancybox.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
   <!-- <script type="text/javascript" src="./scripts/main.js"></script> -->
   <title>Michael Bello Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Lobster+Two:700i" rel="stylesheet">
 </head>
 <body>
-  <h1 id="header">Michael Bello</h1>
+  <h1 class="animated slideInRight"  id="header">Michael Bello</h1>
+
+
   <!-- <nav class="navigation" role="navigation">
   <ul>
   <li class="">
@@ -29,34 +32,36 @@
 </li>
 </ul>
 </nav> -->
-<section class="line-drawings">
-  <h1>Line drawings</h1>
+<h2 class="sub-header">Line drawings</h2>
+<section class="line-drawings-container">
 
   <a data-fancybox="gallery" href="./images/line-drawings/line-drawings-1.jpg" id="example" class="img-container">
     <img src="./images/line-drawings/line-drawings-1.jpg">
   </a>
-  <a data-fancybox="gallery" href="./images/line-drawings/line-drawings-2.jpg" class="img-container">
-    <img src="./images/line-drawings/line-drawings-2.jpg">
-  </a>
   <a data-fancybox="gallery" href="./images/line-drawings/line-drawings-3.jpg" class="img-container">
     <img src="./images/line-drawings/line-drawings-3.jpg">
   </a>
-  <a data-fancybox="gallery" href="./images/line-drawings/line-drawings-4.jpg" class="img-container">
-    <img src="./images/line-drawings/line-drawings-4.jpg">
-  </a>
+  <div class="two-images">
+    <a data-fancybox="gallery" href="./images/line-drawings/line-drawings-2.jpg" class="img-container">
+      <img src="./images/line-drawings/line-drawings-2.jpg">
+    </a>
+    <a data-fancybox="gallery" href="./images/line-drawings/line-drawings-4.jpg" class="img-container">
+      <img src="./images/line-drawings/line-drawings-4.jpg">
+    </a>
+  </div>
 </section>
 
-<div id="sidebar">
+<div class="sidebar">
   <ul>
-    <li>Home</li>
-    <li>Link Marks</li>
-    <li>View Sketches</li>
-    <li>CAD</li>
-    <li>3D Models</li>
-    <li>Contact</li>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./line-marks.html">Link Marks</a></li>
+    <li><a href="./view-sketches.html">View Sketches</a></li>
+    <li><a href="./cad.html">CAD</a></li>
+    <li><a href="./3d-models.html">3D Models</a></li>
+    <li><a href="./contact.html">Contact</a></li>
   </ul>
 </div>
-<div id="toggle-btn">
+<div class="toggle-btn">
 <!-- <div id="toggle-btn" onclick="toggleSidebar(this)"> -->
   <span></span>
   <span></span>
@@ -69,9 +74,6 @@
 <section class="cad">
 
 </section>
-
-
-
 
 
 
